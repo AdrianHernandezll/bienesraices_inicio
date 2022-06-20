@@ -68,26 +68,42 @@
           </select>
 
           <label for="presupuesto">Precio o Presupuesto</label>
-          <input type="tel" id="presupuesto" name="Tu precio o presupuesto" />
+          <input
+            type="number"
+            id="presupuesto"
+            name="Tu precio o presupuesto"
+          />
         </fieldset>
 
         <fieldset>
           <legend>Informacion sobre la propiedad</legend>
           <p>Como desea ser contactado</p>
 
-          <label for="contacto-telefono">Telefono</label>
-          <input type="radio" name="contacto" id="contacto-telefono" />
+          <div class="forma-contacto">
+            <label for="contactar-telefono">Telefono</label>
+            <input
+              type="radio"
+              value="telefono"
+              name="contacto"
+              id="contactar-telefono"
+            />
 
-          <label for="contacto-email">E-mail</label>
-          <input type="radio" name="contacto" id="contacto-email" />
+            <label for="contacar-email">E-mail</label>
+            <input
+              type="radio"
+              value="email"
+              name="contacto"
+              id="contactar-email"
+            />
+          </div>
 
           <p>Si eligió teléfono, elija la fecha y la hora</p>
 
           <label for="fecha">Fecha:</label>
-          <input type="date" name="fecha" id="fecha" />
+          <input type="date" id="fecha" />
 
           <label for="hora">Hora:</label>
-          <input type="time" name="hora" id="hora" min="09:00" max="20:30" />
+          <input type="time" id="hora" min="09:00" max="20:30" />
         </fieldset>
 
         <input type="submit" name="submit" value="Enviar" class="boton-verde" />
